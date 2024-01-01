@@ -11,9 +11,8 @@ background-color: hsl(210, 46%, 95%);
 }
 
 .container{
-  width: 60%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,7 +24,7 @@ a{
 }
 
 .article-wrapper{
-  width: 100%;
+  margin: 0 50px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   border-radius: 10px;
@@ -168,10 +167,11 @@ a{
 /*mobile view*/
 @media(max-width:768px){
   .container{
-    width: 90%;
+    width: 100%;
   }
   
   .article-wrapper{
+    margin: 0 20px;
     grid-template-columns: 1fr;
   }
   
@@ -195,6 +195,19 @@ a{
   
   .article-text{
     font-size: 1.1em;
+  }
+  
+  .article-profile img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .article-profile .name{
+    font-size: 1.1em;
+  }
+  
+  .article-profile .date{
+    font-size: 0.9rem;
   }
 }
 
